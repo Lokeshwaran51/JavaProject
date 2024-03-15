@@ -13,7 +13,7 @@ public class JWTToken {          												//SecretKey is used to validate tok
 	private static final long Expiration_Time=3600000; 							//Set Expiration Time for 1hour in milliseconds
     public static void main(String[] args) {
         Map<String,String> map=new HashMap<>();  //HashMap is used to store key,value pairs
-        map.put("userId","12345");  								//Private Claims or Custom Data  Claims-Where each Key is claims
+        map.put("userId","1234");  								//Private Claims or Custom Data  Claims-Where each Key is claims
         map.put("userName", "Lokesh");
         String jwtToken=generateJwtToken(map);
         System.out.println(jwtToken);
